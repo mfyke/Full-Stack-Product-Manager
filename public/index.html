@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Retail Manager</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <section class="top">
+      <header class="bg-primary text-light mb-4 py-3 flex-row align-center">
+        <div
+          class="container flex-row justify-space-between-lg justify-center align-center"
+        >
+          <h1 class="m-0">Ecommerce Retail Manager</h1>
+          <p class="m-0">All your products in one place.</p>
+          <button class="btn btn-info" id="category-btn">Categories</button>
+          <button class="btn btn-info" id="tag-btn">Tags</button>
+        </div>
+      </header>
+      <div class="text-center container">
+        <h2>Products</h2>
+      </div>
+    </section>
+    <section id="edit-form-section"></section>
+    <section class="product-form">
+      <form
+        class="flex-row justify-center justify-space-between-md align-center"
+        id="product-form"
+      >
+        <div class="col-12">
+          <input
+            name="productName"
+            id="productName"
+            placeholder="name"
+            value=""
+            class="form-input w-100"
+          ></input>
+        </div>
+        <div class="col-12">
+          <input
+            name="stock"
+            id="stock"
+            placeholder="stock"
+            value=""
+            class="form-input w-100"
+          ></input>
+        </div>
+        <div class="col-12" id="categorySelectDiv"></div>
+        <div class="col-12 col-lg-9">
+          <input
+            name="price"
+            id="price"
+            placeholder="price"
+            value=""
+            class="form-input w-100"
+          />
+        </div>
+        <div class="col-12 col-lg-3">
+          <button class="btn btn-primary btn-block py-3" type="submit">
+            Add Product
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="products" id="product-container"></section>
+    <section class="modal" id="product-modal">
+      <div class="text-center" id="modal-content">
+      </div>
+    </section>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
